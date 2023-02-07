@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Gyre.ai Blog</title>
+        <link>https://gyre.ai/blog</link>
+        <description>Gyre.ai Blog</description>
+        <lastBuildDate>Tue, 07 Feb 2023 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[First Blog Post]]></title>
+            <link>https://gyre.ai/blog/first-blog-post</link>
+            <guid>first-blog-post</guid>
+            <pubDate>Tue, 07 Feb 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[This is the first blog post on the gyre.ai site. It's really just a placeholder.]]></description>
+            <content:encoded><![CDATA[<p>This is the first blog post on the gyre.ai site. It's really just a placeholder.</p><p>Will I update this blog? Probably not, but maybe. Will the mystery be too much to withstand? No.</p>]]></content:encoded>
+            <category>gyre</category>
+            <category>organisation</category>
+        </item>
+    </channel>
+</rss>

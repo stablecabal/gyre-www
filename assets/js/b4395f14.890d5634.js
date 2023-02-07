@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgyre_www=self.webpackChunkgyre_www||[]).push([[397],{4861:a=>{a.exports=JSON.parse('{"label":"organisation","permalink":"/blog/tags/organisation","allTagsPath":"/blog/tags","count":1}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgyre_www=self.webpackChunkgyre_www||[]).push([[713],{3457:e=>{e.exports=JSON.parse('[{"label":"gyre","permalink":"/blog/tags/gyre","count":1},{"label":"organisation","permalink":"/blog/tags/organisation","count":1}]')}}]);
