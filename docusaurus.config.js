@@ -79,12 +79,12 @@ const config = {
         },
         items: [
           {to: '/features', label: "Features", position: 'left'},
-          // {
-          //   type: 'doc',
-          //   docId: 'features',
-          //   position: 'left',
-          //   label: 'Features',
-          // },
+          {
+            type: 'doc',
+            docId: 'install/gyre-installer',
+            position: 'left',
+            label: 'Docs',
+          },
           { to: '/blog', label: 'Blog', position: 'left' },
           {
             href: 'https://github.com/stablecabal/gyre',
