@@ -106,16 +106,20 @@ const config = {
             ],
           },
           {
-            title: 'Community',
+            title: 'Contact',
             items: [
-              // {
-              //   label: 'Discord',
-              //   href: '??',
-              // },
+              {
+                label: 'Discord',
+                href: 'https://discord.gg/stFy2UPppg',
+              },
               {
                 label: 'Twitter',
                 href: 'https://twitter.com/hafriedlander',
               },
+              {
+                label: 'Commercial enquiries',
+                href: 'mailto:commercial@gyre.ai'
+              }
             ],
           },
           {
