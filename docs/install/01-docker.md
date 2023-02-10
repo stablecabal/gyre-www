@@ -1,12 +1,20 @@
 # Docker
 
+Gyre can be run in Docker, either locally or on a cloud host like vast.ai. This
+allows us to easily manage Gyre's dependancies.
+
+The default Docker images come compiled with Cuda 11.8, giving better
+performance on RTX4080 & 4090 cards than using the manual installation.
+
+The basic command to run Gyre in Docker looks something like this:
+
 ```
-docker run --gpus all -it -p 50051:50051 \
+docker run --gpus all -it -p 5000:5000 -p 50051:50051 \
   -e HF_API_TOKEN={your huggingface token} \
   -e SD_LISTEN_TO_ALL=1 \
   -v $HOME/.cache/huggingface:/huggingface \
   -v `pwd`/weights:/weights \
-  hafriedlander/gyre:xformers-latest
+  hafriedlander/gyre:cuda118-xformers-latest
 ```
 
 #### Localtunnel
@@ -56,18 +64,6 @@ with SD:
 - SD_RELOAD
 - SD_LOCALTUNNEL
 
-#### Building the image locally
-
-```
-docker build --target main .
-```
-
-Or to build (slowly) with xformers
-
-```
-docker build --target xformers .
-```
-
 #### Building Cuda 11.8 support
 
 For RTX 40xx performance, we want to use Cuda 11.8. Pytorch 1.12.1 only comes with Cuda 11.6
@@ -79,4 +75,19 @@ docker build . -f Dockerfile.cuda118 --target xformers \
     --build-arg XFORMERS_REF=53b7454 \
     --build-arg TRITON_REF=8650b4d \
     --tag hafriedlander/gyre:cuda118-xformers-1.0.0
+```
+
+#### Building on default pytorch
+
+Building pytorch takes a long time, so you can build on the default pytorch (which uses Cuda 11.6)
+if you prefer.
+
+```
+docker build --target main .
+```
+
+Or to build (slowly) with xformers
+
+```
+docker build --target xformers .
 ```
