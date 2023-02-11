@@ -28,6 +28,13 @@ const config = {
     locales: ['en'],
   },
 
+  headTags: [
+    {tagName: 'meta', attributes: {property: 'og:image', content: "https://gyre.ai/img/gyrelogo-full.png"}},
+    {tagName: 'meta', attributes: {name: 'twitter:card', content: "summary_large_image"}},
+    {tagName: 'meta', attributes: {name: 'twitter:creator', content: "@hafriedlander"}},
+    {tagName: 'meta', attributes: {name: 'twitter:image', content: "https://gyre.ai/img/gyrelogo-full.png"}},
+  ],
+
   presets: [
     [
       'classic',
