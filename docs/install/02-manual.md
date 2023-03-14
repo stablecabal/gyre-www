@@ -21,6 +21,7 @@ Then for Windows:
 
 ```
 set PIP_EXTRA_INDEX_URL=https://download.pytorch.org/whl/cu116 
+set PIP_FIND_LINKS=https://download.openmmlab.com/mmcv/dist/cu116/torch1.12/index.html
 flit install --pth-file
 ```
 
@@ -28,6 +29,7 @@ Or for Linux
 
 ```
 export PIP_EXTRA_INDEX_URL=https://download.pytorch.org/whl/cu116
+export PIP_FIND_LINKS=https://download.openmmlab.com/mmcv/dist/cu116/torch1.12/index.html
 flit install --pth-file
 ```
 
