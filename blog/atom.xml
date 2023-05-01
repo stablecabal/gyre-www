@@ -9,7 +9,7 @@
     <icon>https://gyre.ai/img/gyrelogo-64.png</icon>
     <entry>
         <title type="html"><![CDATA[First Blog Post]]></title>
-        <id>https://gyre.ai/blog/first-blog-post</id>
+        <id>first-blog-post</id>
         <link href="https://gyre.ai/blog/first-blog-post"/>
         <updated>2023-02-07T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[This is the first blog post on the gyre.ai site. It's really just a placeholder.]]></summary>
