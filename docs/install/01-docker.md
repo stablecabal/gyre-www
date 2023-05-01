@@ -19,7 +19,7 @@ docker run --gpus all -it -p 5000:5000 -p 50051:50051 \
 Pre-built docker images are available at [Github Container Registry](https://github.com/stablecabal/gyre/pkgs/container/gyre) or [Docker Hub](https://hub.docker.com/r/hafriedlander/gyre)
 
 Docker images are provided as Cuda `11.6`, `11.7` and `11.8` based versions,
-with `basic`, `xformers` and `xformers-training` options
+with `basic`, `xformers`, `bundle` and `xformers-training` options
 
 Unless you have a specific reason to use another, cuda118-xformers is the recommended option.
 
@@ -30,6 +30,11 @@ Just gyre on top of the nvidia runtime image for the selected cuda version. Thes
 #### xformers
 
 Basic + xformers. Faster and less vram used, but bigger docker image and slightly longer delay to be available.
+
+#### bundle
+
+xformers + the flying dog web interface. For end-users who just want to create AI art (but
+who are comfortable with Docker).
 
 #### xformers-training
 

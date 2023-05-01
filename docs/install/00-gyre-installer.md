@@ -1,7 +1,19 @@
 # Gyre installer 
 The easy, one click installer for Gyre
 
-- Download [the installer](https://github.com/stablecabal/gyre-installer/archive/refs/tags/v1.1.0.zip)
+## Bundle - for people who just want to start making art
+
+The bundle includes a web interface, thanks to [flying dog software](https://www.flyingdog.de/sd/).
+This is the one you want if you just want to start making art
+
+Download [the bundle installer](https://github.com/stablecabal/gyre-installer/archive/refs/tags/bundle-v2.0.0.zip)
+
+## Server-only - for people who want to BYO client
+
+The server-only is just the server, without a client. This is the one you want if 
+you want to use or develop your own client.
+
+Download [the server-only installer](https://github.com/stablecabal/gyre-installer/archive/refs/tags/v2.0.0.zip)
 
 :::note
 
@@ -31,7 +43,7 @@ Just run install_or_update.cmd (when the server isn't running) to update to the 
 
 :::caution
 
-If you are running any version for gyre-installer before v1.1.0, before upgrading to Gyre 2 (not yet released) please make sure to download the newest version of [the installer](https://github.com/stablecabal/gyre-installer/archive/refs/tags/v1.1.0.zip) and unpack the contained files over top of your existing installation (overwriting the existing files). 
+If you are running any version for gyre-installer before v1.1.0, before upgrading to Gyre 2 please make sure to download the newest version of [the installer](https://github.com/stablecabal/gyre-installer/archive/refs/tags/v1.1.0.zip) and unpack the contained files over top of your existing installation (overwriting the existing files). 
 
 You can then run install_or_update.cmd as normal
 
