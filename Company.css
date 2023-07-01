@@ -1,0 +1,70 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 1163px;
+}
+
+.u-section-1 .u-text-1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-image: none;
+  margin: 7px auto 0;
+}
+
+.u-section-1 .u-text-2 {
+  line-height: 2;
+  margin: 20px auto 0 192px;
+}
+
+.u-section-1 .u-image-1 {
+  width: 122px;
+  height: 122px;
+  background-image: url("images/Profilbild2.jpg");
+  background-position: 50% 50%;
+  margin: -632px auto 0 42px;
+}
+
+.u-section-1 .u-image-2 {
+  width: 127px;
+  height: 127px;
+  background-image: url("images/Screenshot2023-06-30020729.png");
+  background-position: 50% 50%;
+  margin: 82px auto 60px 37px;
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-text-2 {
+    margin-left: 144px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-text-1 {
+    font-size: 1.5rem;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-left: 91px;
+  }
+}.u-section-2 .u-sheet-1 {
+  min-height: 563px;
+}.u-section-3 .u-sheet-1 {
+  min-height: 500px;
+}
+
+@media (max-width: 991px) {
+  .u-section-3 .u-sheet-1 {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-3 .u-sheet-1 {
+    min-height: 350px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-3 .u-sheet-1 {
+    min-height: 220px;
+  }
+}
