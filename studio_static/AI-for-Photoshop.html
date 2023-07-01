@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>flying dog - AI for Photoshop</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="AI-for-Photoshop.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 5.12.7, nicepage.com">
+    <meta property="og:title" content="The AI Revolution for Photoshop">
+    <meta property="og:description" content="Your editing workflow will never been the same again: with DALL-E 2 and Stable Diffusion">
+    <meta property="og:image" content="https://www.flyingdog.de/sd/images/Screenshot2022-11-27022906.jpg">
+    <meta property="og:url" content="https://www.flyingdog.de/sd/">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Gyre AI",
+		"logo": "images/logo.png"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body class="u-body u-xl-mode" data-lang="en"><header class="u-clearfix u-custom-color-3 u-header u-header" id="sec-00bd"><div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-container-style u-expanded-width u-group u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+            <p class="u-custom-font u-font-montserrat u-text u-text-black u-text-default u-text-1">flying dog for Photoshop</p>
+            <a href="Gyre-AI.html" class="u-image u-logo u-image-1" data-image-width="2412" data-image-height="939" title="Gyre AI">
+              <img src="images/logo.png" class="u-logo-image u-logo-image-1">
+            </a>
+            <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+              <div class="menu-collapse u-custom-font u-font-montserrat" style="font-size: 0.8125rem; letter-spacing: 0px; font-weight: 700;">
+                <a class="u-button-style u-custom-border u-custom-border-color u-custom-borders u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" style="padding: 4px 0px; font-size: calc(1em + 8px);">
+                  <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+                  <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+                </a>
+              </div>
+              <div class="u-custom-menu u-nav-container">
+                <ul class="u-custom-font u-font-montserrat u-nav u-spacing-20 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-body-alt-color u-text-hover-palette-2-base" href="Video-Tutorials.html" style="padding: 10px;">Video Tutorials</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-body-alt-color u-text-hover-palette-2-base" href="https://discord.com/invite/TH9TczVP5F" target="_blank" style="padding: 10px;">Community</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-body-alt-color u-text-hover-palette-2-base" href="mailto:support@flyingdog.de" style="padding: 10px;">Support</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-body-alt-color u-text-hover-palette-2-base" style="padding: 10px;">Documentation</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="FAQ-Gyre.html">FAQ Gyre</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="https://www.flyingdog.de/sd/help/" target="_blank">Basic Documentation</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-body-alt-color u-text-hover-palette-2-base" style="padding: 10px;">Company</a>
+</li></ul>
+              </div>
+              <div class="u-custom-menu u-nav-container-collapse">
+                <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+                  <div class="u-inner-container-layout u-sidenav-overflow">
+                    <div class="u-menu-close"></div>
+                    <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-3"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Video-Tutorials.html">Video Tutorials</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="https://discord.com/invite/TH9TczVP5F" target="_blank">Community</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="mailto:support@flyingdog.de">Support</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Documentation</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="FAQ-Gyre.html">FAQ Gyre</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="https://www.flyingdog.de/sd/help/" target="_blank">Basic Documentation</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Company</a>
+</li></ul>
+                  </div>
+                </div>
+                <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div></header>
+    <section class="u-clearfix u-custom-color-3 u-section-1" id="sec-e906">
+      <div class="u-clearfix u-sheet u-sheet-1"></div>
+    </section>
+    <section class="u-clearfix u-section-2" id="sec-0e34">
+      <div class="u-clearfix u-sheet u-uploaded-video u-video u-video-contain u-video-1">
+        <div class="u-absolute-hcenter u-background-video u-expanded" style="">
+          <div class="embed-responsive">
+            <video class="embed-responsive-item" data-autoplay="1" loop="" muted="1" autoplay="autoplay" playsinline="">
+              <source src="files/BannerVideoPlugin-4.mp4" type="video/mp4">
+              <p>Your browser does not support HTML5 video.</p>
+            </video>
+          </div>
+        </div>
+        <a href="https://exchange.adobe.com/apps/cc/8c3dcbe7?pluginId=8c3dcbe7&amp;workflow=share" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-2 u-custom-font u-font-montserrat u-hover-palette-1-dark-1 u-radius-19 u-btn-1" target="_blank">BUY NOW&nbsp;<br>
+        </a>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-section-3" id="sec-a3ec">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-align-center u-container-style u-custom-color-1 u-expanded-width u-group u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+            <h2 class="u-custom-font u-font-montserrat u-text u-text-body-color u-text-1"> AI Superpower for Photos​hop</h2>
+            <img class="u-image u-image-round u-preserve-proportions u-radius-20 u-image-1" src="images/spac_art.png" alt="" data-image-width="1000" data-image-height="1000">
+            <img class="u-image u-image-round u-preserve-proportions u-radius-20 u-image-2" src="images/d2_portrait.jpg" alt="" data-image-width="1024" data-image-height="1024">
+            <img class="u-image u-image-round u-preserve-proportions u-radius-20 u-image-3" src="images/d2_nature.jpg" alt="" data-image-width="1024" data-image-height="1024">
+            <img class="u-image u-image-round u-preserve-proportions u-radius-20 u-image-4" src="images/cute_creature.jpg" alt="" data-image-width="512" data-image-height="512">
+            <img class="u-image u-image-round u-preserve-proportions u-radius-20 u-image-5" src="images/d2_Psychedelic.jpg" alt="" data-image-width="1024" data-image-height="1024">
+            <p class="u-custom-font u-font-montserrat u-text u-text-body-color u-text-2">Your Editing Workflow will never be the same again<br>
+              <br>
+            </p>
+            <h5 class="u-custom-font u-font-montserrat u-text u-text-body-color u-text-3">
+              <span style="font-weight: 700;">Next level AI editor: flying dog AI Studio <a href="https://www.youtube.com/watch?v=ry6D-BjtPCM" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" target="_blank">- Video</a>
+              </span>
+              <br>
+              <br> Four powerful AI connectors: Three for Stable Diffusion and DALL-E 2&nbsp;<br>
+              <br>Use your own Stable Diffusion Server&nbsp;<br>
+              <br>Text2Image, Inpainting, Outpainting and Image2Image<br>
+              <br>Modifiers Library<br>
+              <br>Working on Selection<br>
+              <br>Finetuned Dreambooth models<br>
+              <br>Background Tasks, Multi Server Management and more<br>
+              <br>
+              <br>
+            </h5>
+            <img class="u-image u-image-round u-preserve-proportions u-radius-20 u-image-6" src="images/product.jpg" alt="" data-image-width="512" data-image-height="512">
+            <img class="u-image u-image-round u-preserve-proportions u-radius-20 u-image-7" src="images/d2_food.jpg" alt="" data-image-width="1024" data-image-height="1024">
+            <img class="u-image u-image-round u-preserve-proportions u-radius-20 u-image-8" src="images/d2_comic.jpg" alt="" data-image-width="1024" data-image-height="1024">
+            <a href="https://exchange.adobe.com/apps/cc/8c3dcbe7?pluginId=8c3dcbe7&amp;workflow=share" class="u-black u-border-none u-btn u-btn-round u-button-style u-custom-font u-font-montserrat u-hover-palette-4-base u-radius-20 u-btn-2" target="_blank"> &nbsp;BUY now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-section-4" id="sec-9e77">
+      <div class="u-clearfix u-sheet u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
+        <div class="u-expanded-width u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-align-center u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-1"><span class="u-icon u-icon-circle u-text-grey-25 u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 508.044 508.044" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-d083"></use></svg><svg class="u-svg-content" viewBox="0 0 508.044 508.044" x="0px" y="0px" id="svg-d083" style="enable-background:new 0 0 508.044 508.044;"><g><g><path d="M0.108,352.536c0,66.794,54.144,120.938,120.937,120.938c66.794,0,120.938-54.144,120.938-120.938    s-54.144-120.937-120.938-120.937c-13.727,0-26.867,2.393-39.168,6.61C109.093,82.118,230.814-18.543,117.979,64.303    C-7.138,156.17-0.026,348.84,0.114,352.371C0.114,352.426,0.108,352.475,0.108,352.536z"></path><path d="M266.169,352.536c0,66.794,54.144,120.938,120.938,120.938s120.938-54.144,120.938-120.938S453.9,231.599,387.106,231.599    c-13.728,0-26.867,2.393-39.168,6.61C375.154,82.118,496.875-18.543,384.04,64.303C258.923,156.17,266.034,348.84,266.175,352.371    C266.175,352.426,266.169,352.475,266.169,352.536z"></path>
+</g>
+</g></svg>
+            
+            
+          </span>
+                <p class="u-align-center u-text u-text-default u-text-1"> This software speeds up the work of designers like a turbocharger.</p>
+                <h5 class="u-text u-text-default u-text-2">DER SPIEGEL, 46, page 72</h5>
+              </div>
+            </div>
+            <div class="u-align-center u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-2"><span class="u-icon u-icon-circle u-text-grey-25 u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 508.044 508.044" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-8edf"></use></svg><svg class="u-svg-content" viewBox="0 0 508.044 508.044" x="0px" y="0px" id="svg-8edf" style="enable-background:new 0 0 508.044 508.044;"><g><g><path d="M0.108,352.536c0,66.794,54.144,120.938,120.937,120.938c66.794,0,120.938-54.144,120.938-120.938    s-54.144-120.937-120.938-120.937c-13.727,0-26.867,2.393-39.168,6.61C109.093,82.118,230.814-18.543,117.979,64.303    C-7.138,156.17-0.026,348.84,0.114,352.371C0.114,352.426,0.108,352.475,0.108,352.536z"></path><path d="M266.169,352.536c0,66.794,54.144,120.938,120.938,120.938s120.938-54.144,120.938-120.938S453.9,231.599,387.106,231.599    c-13.728,0-26.867,2.393-39.168,6.61C375.154,82.118,496.875-18.543,384.04,64.303C258.923,156.17,266.034,348.84,266.175,352.371    C266.175,352.426,266.169,352.475,266.169,352.536z"></path>
+</g>
+</g></svg>
+            
+            
+          </span>
+                <p class="u-align-center u-text u-text-default u-text-3">Works Fantasic<br>Definitely a great tool for Outpainting.
+                </p>
+                <h5 class="u-text u-text-default u-text-4">Tom Traubitz</h5>
+              </div>
+            </div>
+            <div class="u-align-center u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-3"><span class="u-icon u-icon-circle u-text-grey-25 u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 508.044 508.044" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-630f"></use></svg><svg class="u-svg-content" viewBox="0 0 508.044 508.044" x="0px" y="0px" id="svg-630f" style="enable-background:new 0 0 508.044 508.044;"><g><g><path d="M0.108,352.536c0,66.794,54.144,120.938,120.937,120.938c66.794,0,120.938-54.144,120.938-120.938    s-54.144-120.937-120.938-120.937c-13.727,0-26.867,2.393-39.168,6.61C109.093,82.118,230.814-18.543,117.979,64.303    C-7.138,156.17-0.026,348.84,0.114,352.371C0.114,352.426,0.108,352.475,0.108,352.536z"></path><path d="M266.169,352.536c0,66.794,54.144,120.938,120.938,120.938s120.938-54.144,120.938-120.938S453.9,231.599,387.106,231.599    c-13.728,0-26.867,2.393-39.168,6.61C375.154,82.118,496.875-18.543,384.04,64.303C258.923,156.17,266.034,348.84,266.175,352.371    C266.175,352.426,266.169,352.475,266.169,352.536z"></path>
+</g>
+</g></svg>
+            
+            
+          </span>
+                <p class="u-align-center u-text u-text-default u-text-5">Fantasic App<br>This is by far the best solution out there for Stable Diffusion at this time.&nbsp;
+                </p>
+                <h5 class="u-text u-text-default u-text-6">Christopher Marin</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="u-align-left u-text u-text-7" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-direction=""><b>+++ Good news: Photoshop 24.3 solves compatibily issue. Please upgrade Photoshop. +++ Biggest update ever ahead - check news on <a href="https://twitter.com/NicolayMausz" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" target="_blank">Twitter </a>+++</b>
+          <br>
+        </p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-5" id="sec-7458">
+      <div class="u-clearfix u-sheet u-uploaded-video u-video u-video-contain u-video-1">
+        <div class="u-absolute-hcenter u-background-video u-expanded" style="">
+          <div class="embed-responsive">
+            <video class="embed-responsive-item" data-autoplay="1" loop="" muted="1" autoplay="autoplay" playsinline="">
+              <source src="files/Banner2-3.mp4" type="video/mp4">
+              <p>Your browser does not support HTML5 video.</p>
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-custom-color-3 u-section-6" id="sec-318c">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <p class="u-custom-font u-font-montserrat u-text u-text-default u-text-1">Source Images from Unsplash.com</p>
+        <h4 class="u-text u-text-default u-text-2">Four AI Connectors</h4>
+        <div class="u-expanded-width u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-container-style u-list-item u-repeater-item u-white u-list-item-1">
+              <div class="u-container-layout u-similar-container u-container-layout-1">
+                <h6 class="u-text u-text-default u-text-3">Gyre</h6>
+                <p class="u-custom-font u-font-montserrat u-text u-text-body-color u-text-default u-text-4">Best overall Stable Diffusion experience with best Outpainting, great Inpainting and CLIP Guidance. Needs local installation on Windows or Linux PC.<br>
+                  <br>
+                </p>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item u-white u-list-item-2">
+              <div class="u-container-layout u-similar-container u-container-layout-2">
+                <h6 class="u-text u-text-default u-text-5">DALL-E 2</h6>
+                <p class="u-custom-font u-font-montserrat u-text u-text-body-color u-text-default u-text-6">Highest resolution and better overall image quality using text to image. It is Cloud based so Mac user can use it.</p>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item u-white u-list-item-3">
+              <div class="u-container-layout u-similar-container u-container-layout-3">
+                <h6 class="u-text u-text-default u-text-7">Automatic1111</h6>
+                <p class="u-custom-font u-font-montserrat u-text u-text-body-color u-text-default u-text-8">Popular community server. Might be useful for some special scenerious. Great Inpainting. Needs local installation.</p>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item u-white u-list-item-4">
+              <div class="u-container-layout u-similar-container u-container-layout-4">
+                <h6 class="u-text u-text-default u-text-9">StabilityAI Cloud</h6>
+                <p class="u-custom-font u-font-montserrat u-text u-text-body-color u-text-default u-text-10">Fall-back if there is no other option available. It does not reach quality of the others at the moment. But we expect huge improments here in the future.&nbsp;</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-7" id="sec-4acb">
+      <div class="u-clearfix u-sheet u-valign-bottom-lg u-valign-bottom-xl u-sheet-1">
+        <div class="u-align-left u-expanded-width u-left-0 u-uploaded-video u-video u-video-1">
+          <div class="embed-responsive">
+            <video class="embed-responsive-item" data-autoplay="1" loop="" muted="1" autoplay="autoplay" playsinline="">
+              <source src="files/Banner3.mp4" type="video/mp4">
+              <p>Your browser does not support HTML5 video.</p>
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-section-8" id="sec-74c1">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1">FAQ</h2>
+        <div class="u-accordion u-expanded-width u-faq u-spacing-10 u-accordion-1">
+          <div class="u-accordion-item">
+            <a class="active u-accordion-link u-button-style u-custom-font u-font-montserrat u-grey-70 u-accordion-link-1" id="link-accordion-f600" aria-controls="accordion-f600" aria-selected="true">
+              <span class="u-accordion-link-text"> What is required to run flying dog for DALL-E 2 &amp; Stable Diffusion?<br>
+              </span><span class="u-accordion-link-icon u-file-icon u-icon u-text-white u-icon-1"><img src="images/2985150-cad478ec.png" alt=""></span>
+            </a>
+            <div class="u-accordion-active u-accordion-pane u-container-style u-shape-rectangle u-accordion-pane-1" id="accordion-f600" aria-labelledby="link-accordion-f600">
+              <div class="u-container-layout u-container-layout-1">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <p id="isPasted">
+                    <span class="u-custom-font u-font-montserrat">You can use this plugin now with DALL-E 2 without installing a server (e.g. Mac users)</span>
+                  </p>
+                  <p>
+                    <span class="u-custom-font u-font-montserrat">On the server side (which can be your own Windows PC running Photoshop as well) you need to run this server here: &nbsp;You can download and install this server and try some prompts in the web interface. If that runs you are ready to go with the Plugin. A decent NVidia graphics card is also required for a local installation of Gyre or Automatic1111.</span>
+                  </p>
+                  <p>
+                    <span class="u-custom-font u-font-montserrat">Photoshop &nbsp;v23.5 or higher (not 23 or lower). It will run on any computer or operating system which supports the required version of Photoshop (Windows 10, MacOS, Apple Silicon, etc are all fine). For M1 Mac please activate "M1 Fix" in configuration.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-button-style u-custom-font u-font-montserrat u-grey-70 u-accordion-link-2" id="link-accordion-72f4" aria-controls="accordion-72f4" aria-selected="false">
+              <span class="u-accordion-link-text"> Which graphics card do I need for local installation?<br>
+              </span><span class="u-accordion-link-icon u-file-icon u-icon u-text-white u-icon-2"><img src="images/2985150-cad478ec.png" alt=""></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-shape-rectangle u-accordion-pane-2" id="accordion-72f4" aria-labelledby="link-accordion-72f4">
+              <div class="u-container-layout u-container-layout-2">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <p id="isPasted">
+                    <span class="u-custom-font u-font-montserrat">We recommend at last 6GB and it has to be from NVIDIA only, 2600 or better. 1000er series is really slow and breaks artistic workflow too much in our opinion - better use a cloud server in that case. Server part does not run on any Mac. For higher resolution than 512x512 (e.g. 1024x1024) you need more GPU memory (e.g. a 3090).</span>
+                  </p>
+                  <p>
+                    <br>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item u-accordion-item-3">
+            <a class="u-accordion-link u-button-style u-custom-font u-font-montserrat u-grey-70 u-accordion-link-3" id="link-15d3" aria-controls="15d3" aria-selected="false">
+              <span class="u-accordion-link-text">What is so ​revolutionary?</span><span class="u-accordion-link-icon u-file-icon u-icon u-text-white u-icon-3"><img src="images/2985150-cad478ec.png" alt=""></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-shape-rectangle u-accordion-pane-3" id="15d3" aria-labelledby="link-15d3">
+              <div class="u-container-layout u-container-layout-3">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <p>
+                    <span class="u-custom-font u-font-montserrat">For the normal Photoshop user - not really into this kind AI before -in daily business the workflow will change a lot:</span>
+                  </p>
+                  <p>
+                    <span class="u-custom-font u-font-montserrat">1. Instead of searching for stock images, just user Text-To-Image AI</span>
+                  </p>
+                  <p>
+                    <span class="u-custom-font u-font-montserrat">2. Instead &nbsp;of using Photoshop Content-Aware Fill - use Inpainting<br>
+                      <br>3. If Image has to be in a spesific format/size just use Outpainting to enlarge it<br>
+                      <br>4. For more artistic illustrations use Image-To-Image or specific style by using Text-To-Image
+                    </span>
+                  </p>
+                  <p>
+                    <span class="u-custom-font u-font-montserrat">5. Instead of doing (little) correction by a brush, just use Inpainting<br>
+                      <br>6. Instead of searching an object in a stock database and prepare it for adding to a scene just use Inpainting
+                    </span>
+                  </p>
+                  <p>
+                    <span class="u-custom-font u-font-montserrat">
+                      <br>
+                      <br>For the advanced AI user knowing all kind of AI already this is also a huge change:<br>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="u-custom-font u-font-montserrat">1. &nbsp;Instead of switching between different AI tools just use mainly this one <br>
+                      <br>2. Instead of struggling with limitations of over-complicated web frontends just use the full power of Photoshop with layers, grouping, selection,...<br>
+                      <br>3. Use this tool for correction of faces or hands from another AI like Midjourney V4
+                    </span>
+                  </p>
+                  <p>
+                    <br>
+                  </p>
+                  <p>
+                    <br>
+                  </p>
+                  <p>
+                    <br>
+                  </p>
+                  <p>
+                    <br>
+                  </p>
+                  <p>
+                    <br>
+                  </p>
+                  <p>
+                    <br>
+                  </p>
+                  <p>
+                    <br>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item u-accordion-item-4">
+            <a class="u-accordion-link u-button-style u-custom-font u-font-montserrat u-grey-70 u-accordion-link-4" id="link-accordion-854e" aria-controls="accordion-854e" aria-selected="false">
+              <span class="u-accordion-link-text"> Can I use your plugin without having an own server?</span><span class="u-accordion-link-icon u-file-icon u-icon u-text-white u-icon-4"><img src="images/2985150-cad478ec.png" alt=""></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-shape-rectangle u-accordion-pane-4" id="accordion-854e" aria-labelledby="link-accordion-854e">
+              <div class="u-container-layout u-container-layout-4">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <p>
+                    <span class="u-custom-font u-font-montserrat">Sure get DALL-E 2 or a Dreamstudio account:&nbsp;</span>
+                    <a href="https://beta.dreamstudio.ai/home"></a>
+                    <span class="u-custom-font u-font-montserrat">
+                      <a href="https://beta.dreamstudio.ai/home">https://beta.dreamstudio.ai/home</a>
+                    </span>
+                    <span class="u-custom-font u-font-montserrat">&nbsp;That StabilityAI cloud version does not have the nice features from local server installation yet (see comparison table below). &nbsp;DALL-E 2 is very powerful with its own features. Warning: StabilityAI rewrites API at the moment from GRPC to REST so it doesn't work very well right now! Update: we will publish instructions to set up your own server in cloud very soon.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item u-accordion-item-5">
+            <a class="u-accordion-link u-button-style u-custom-font u-font-montserrat u-grey-70 u-accordion-link-5" id="link-859e" aria-controls="859e" aria-selected="false">
+              <span class="u-accordion-link-text"> I am not sure about your plugin or server part. Is there a test version available?</span><span class="u-accordion-link-icon u-file-icon u-icon u-text-white u-icon-5"><img src="images/2985150-cad478ec.png" alt=""></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-shape-rectangle u-accordion-pane-5" id="859e" aria-labelledby="link-859e">
+              <div class="u-container-layout u-container-layout-5">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <p>We are working on a test version right now.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item u-accordion-item-6">
+            <a class="u-accordion-link u-button-style u-custom-font u-font-montserrat u-grey-70 u-accordion-link-6" id="link-89bd" aria-controls="89bd" aria-selected="false">
+              <span class="u-accordion-link-text">What about the Automatic1111 image quality?</span><span class="u-accordion-link-icon u-file-icon u-icon u-text-white u-icon-6"><img src="images/2985150-cad478ec.png" alt=""></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-shape-rectangle u-accordion-pane-6" id="89bd" aria-labelledby="link-89bd">
+              <div class="u-container-layout u-container-layout-6">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <p>
+                    <span class="u-custom-font u-font-montserrat">For image generation using "text to image" it offers special features like HiResFix, Tiling, or Face restoration. But it does not offer Clip Guidance and Outpainting quality is much worse than Gyre (former grpcServer). At Automatic1111 just Latent Noise will be used for Outpainting in combination with the Runway 1.5 Inpainting model. The MK2 Outpainting script of A1111 is not part of the API. Gyre on the other hand offers MK3 in combination with the Runway 1.5 Inpainting model and also Clip Guidance. Inpainting operations deliver similar results. So our recommendation which server to use is clearly Gyre but A1111 can be used additionally because the plugin supports multiple connectors.&nbsp;</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item u-accordion-item-7">
+            <a class="u-accordion-link u-button-style u-custom-font u-font-montserrat u-grey-70 u-accordion-link-7" id="link-e0f9" aria-controls="e0f9" aria-selected="false">
+              <span class="u-accordion-link-text"> Where do I report Bugs or Feature requests?</span><span class="u-accordion-link-icon u-file-icon u-icon u-text-white u-icon-7"><img src="images/2985150-cad478ec.png" alt=""></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-shape-rectangle u-accordion-pane-7" id="e0f9" aria-labelledby="link-e0f9">
+              <div class="u-container-layout u-container-layout-7">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <p id="isPasted">For Plugin itself use our Discord: <a class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="https://discord.gg/TH9TczVP5F" rel="noopener noreferrer" target="_blank">https://discord.gg/TH9TczVP5F</a> or our support E-Mail <a href="mailto:support@flyingdog.de">support@flyingdog.de</a> We do not offer Automatic1111 installation support.
+                  </p>
+                  <p>
+                    <br>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item u-accordion-item-8">
+            <a class="u-accordion-link u-button-style u-custom-font u-font-montserrat u-grey-70 u-accordion-link-8" id="link-bd05" aria-controls="bd05" aria-selected="false">
+              <span class="u-accordion-link-text"> What is your refund policy?</span><span class="u-accordion-link-icon u-file-icon u-icon u-text-white u-icon-8"><img src="images/2985150-cad478ec.png" alt=""></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-shape-rectangle u-accordion-pane-8" id="bd05" aria-labelledby="link-bd05">
+              <div class="u-container-layout u-container-layout-8">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <p id="isPasted">
+                    <span class="u-custom-font u-font-montserrat">Unlike our other products, flying dog for Stable Diffusion is sold directly through Adobe's marketplace. As such, it is subject to their terms and conditions, and you would need to contact Adobe Support for issues relating to the purchase itself at asupport@adobe.com (Of course we happy to provide the same technical support as always for the installed product). If the Adobe support can not help you in a refund situation, please contact our support anyway.</span>
+                  </p>
+                  <p>
+                    <br>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-custom-color-3 u-section-9" id="carousel_91e7">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-custom-font u-font-montserrat u-text u-text-1">Comparison AI Server</h2>
+        <p class="u-custom-font u-font-montserrat u-text u-text-2">The plugin ships with connectors to four different server. This table will be updated with each version. Things are constantly changing on a weekly basis.</p>
+        <div class="u-expanded-width u-table u-table-responsive u-table-1">
+          <table class="u-table-entity u-table-entity-1">
+            <colgroup>
+              <col width="20%">
+              <col width="20%">
+              <col width="20%">
+              <col width="20%">
+              <col width="20%">
+            </colgroup>
+            <thead class="u-palette-5-dark-2 u-table-header u-table-header-1">
+              <tr>
+                <th class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-5-dark-1 u-table-cell"></th>
+                <th class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-5-dark-1 u-table-cell">GYRE (former GRPCSERVER)</th>
+                <th class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-5-dark-1 u-table-cell">DALL-E 2</th>
+                <th class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-5-dark-1 u-table-cell">AUTOMATIC1111</th>
+                <th class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-5-dark-1 u-table-cell">StabilityAI Cloud</th>
+              </tr>
+            </thead>
+            <tbody class="u-palette-5-dark-3 u-table-body u-table-body-1">
+              <tr style="height: 76px;">
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-6"> Price</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-7"> free</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-8"> costs per generation</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-9"> free</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-10">costs per generation</td>
+              </tr>
+              <tr>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-11"> System&nbsp;</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-12"> Windows or Linux PC with NVIDA GPU</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-13">none</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-14"> Windows or Linux PC with NVIDA GPU</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-15">none</td>
+              </tr>
+              <tr>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-16"> Text to Image</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-17"> supported</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-18"> supported, best quality</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-19"> supported</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-20">supported</td>
+              </tr>
+              <tr>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-21"> Image to Image</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-22"> supported</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-23">not supported</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-24"> supported</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-25"> supported</td>
+              </tr>
+              <tr style="height: 46px;">
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-26">Inpainting</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-27">supported (e.g. 1.5 Runway model), good quality</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-28"> supported</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-29">supported (e.g. 1.5 Runway model), good quality</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-30">
+                  <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="https://github.com/Stability-AI/stability-sdk/issues/146" target="_blank">supported (2.0 model), quality issues</a>
+                </td>
+              </tr>
+              <tr style="height: 46px;">
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-31">Speed</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-32">Depends on GPU</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-33">very fast</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-34">Depends on GPU</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-35">very fast</td>
+              </tr>
+              <tr style="height: 64px;">
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-36">Model</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-37"> SD 1.5 + RW 1.5-Inpainting + SD 2.1 + 2.0 Inpainting + Fine tuned Dreambooth models, LoRa, Depth2Image</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-38"> DALL-E 2</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-39"> SD 1.5 +&nbsp; RW1.5-Inpainting + SD 2.1+ Fine tuned Dreambooth models, LoRa, Depth2Image</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-40"> SD 1.5 + SD 2.1&nbsp;</td>
+              </tr>
+              <tr style="height: 54px;">
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-41">Outpainting</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-42">yes (best quality)</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-43">yes (best quality)</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-44">bad quality</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-45">
+                  <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2" href="https://github.com/Stability-AI/stability-sdk/issues/146" target="_blank">yes but quality issues</a>
+                </td>
+              </tr>
+              <tr style="height: 46px;">
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-46">Depth2Image</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-47">yes</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-48">no</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-49">
+                  <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-3" href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/pull/5542" target="_blank">yes <span style="font-weight: 400;">- just download model</span>
+                  </a>
+                </td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-50">no</td>
+              </tr>
+              <tr style="height: 30px;">
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-51">Best image size</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-52">512x512 up to 1024x1024grpc</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-53">1024x1024</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-54">512x512&nbsp;up to 1024x1024</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-55">512x512 up to 1024x1024</td>
+              </tr>
+              <tr style="height: 32px;">
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-56">Installation</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-57">1 Click Installer</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-58">not needed</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-59">manual</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-60">not needed</td>
+              </tr>
+              <tr style="height: 61px;">
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-61">Content Filter</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-62">no</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-63">yes</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-64">no</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-65">yes</td>
+              </tr>
+              <tr style="height: 46px;">
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-66">Mac</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-67">no</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-68">yes</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-69">no</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-70">yes</td>
+              </tr>
+              <tr style="height: 36px;">
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-71">flying dog Support</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-72">yes</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-73">yes</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-74">no*</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-75">yes</td>
+              </tr>
+              <tr style="height: 46px;">
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-76">Other</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-77">Clip guidance,&nbsp;HiRes Fix, Tiling</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-78">Variations</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-79">HiRes Fix, Tiling, Face Restoration, WebUI</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-80">-</td>
+              </tr>
+              <tr style="height: 46px;">
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-81">Internet</td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-82">
+                  <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-4" href="https://gyre.ai/" target="_blank">gyre.ai</a>
+                </td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-83">
+                  <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-5" href="https://openai.com/dall-e-2/" target="_blank">OpenAI</a>
+                </td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-84">
+                  <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-6" href="https://github.com/AUTOMATIC1111/stable-diffusion-webui" target="_blank">Automatic1111 on GitHub</a>
+                </td>
+                <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-85">
+                  <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-7" href="https://beta.dreamstudio.com" target="_blank">Dreamstudio</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="u-custom-font u-font-montserrat u-text u-text-3"> * only community support on our Discord. We cannot provide full support for this kind of server because it changes very often and so it could break and not work. Another reason: the installation is more complicated.<br>
+          <br>
+        </p>
+      </div>
+    </section>
+    
+    
+    <footer class="u-align-center u-black u-clearfix u-footer u-footer" id="sec-ba2f"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <p class="u-custom-font u-font-montserrat u-small-text u-text u-text-variant u-text-1">(C) 2022-23 <a href="https://www.flyingdog.de/" class="u-btn u-button-link u-button-style u-none u-text-white u-btn-1" target="_blank">Gyre AI</a>
+        </p>
+        <p class="u-custom-font u-font-montserrat u-text u-text-body-color u-text-2">
+          <a href="​https://www.flyingdog.de/sd/tos/Terms-of-Service.html" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-white u-btn-2">Terms of Service</a>
+        </p>
+      </div></footer>
+  
+</body></html>

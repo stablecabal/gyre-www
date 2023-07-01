@@ -15,8 +15,9 @@
   },
   "dependencies": {
     "@adobe/leonardo-contrast-colors": "^1.0.0-alpha.13",
-    "@docusaurus/core": "2.2.0",
-    "@docusaurus/preset-classic": "2.2.0",
+    "@docusaurus/core": "^2.4.1",
+    "@docusaurus/plugin-client-redirects": "^2.4.1",
+    "@docusaurus/preset-classic": "^2.4.1",
     "@mdx-js/react": "^1.6.22",
     "chroma-js": "^2.4.2",
     "clsx": "^1.2.1",
@@ -30,7 +31,7 @@
     "trim": "^1.0.1"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "2.2.0"
+    "@docusaurus/module-type-aliases": "^2.4.1"
   },
   "browserslist": {
     "production": [

@@ -14,6 +14,7 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/gyrelogo-64.png',
+  staticDirectories: ['static', 'studio_static'],
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -40,7 +41,11 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        pages: {
+          routeBasePath: "server",
+        },
         docs: {
+          routeBasePath: "server/docs",
           sidebarPath: require.resolve('./sidebars.js'),
         },
         blog: {
@@ -59,7 +64,7 @@ const config = {
         specs: [
           {
             spec: 'apispecs/stablecabal.openapi.json',
-            route: '/api/',
+            route: 'server/api',
           },
         ],
         // Theme Options for modifying how redoc renders them
@@ -70,6 +75,22 @@ const config = {
       },
     ],
 
+  ],
+
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        createRedirects: function (existingPath) {
+          if (existingPath.includes('/server/docs')) {
+            return [
+              existingPath.replace('/server/docs', '/docs'),
+            ];
+          }
+          return undefined; // Return a falsy value: no redirect created
+        },          
+      }
+    ]
   ],
 
   themeConfig:
@@ -83,9 +104,10 @@ const config = {
         logo: {
           alt: 'Gyre.ai Logo',
           src: 'img/gyrelogo-256.png',
+          href: "/server"
         },
         items: [
-          {to: '/features', label: "Features", position: 'left'},
+          {to: '/server/features', label: "Features", position: 'left'},
           {
             type: 'doc',
             docId: 'install/gyre-installer',
@@ -108,7 +130,7 @@ const config = {
             items: [
               {
                 label: 'OpenAPI',
-                to: '/api',
+                to: '/server/api',
               },
             ],
           },

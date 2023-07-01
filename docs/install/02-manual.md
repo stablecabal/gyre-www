@@ -47,4 +47,4 @@ conda environment and re-install
 python ./server.py
 ```
 
-See [Command line arguments](/docs/cli-arguments) for more
+See [Command line arguments](/server/docs/cli-arguments) for more
